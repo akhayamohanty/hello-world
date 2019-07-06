@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <!-- <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5"> -->
+  <title>:: Welcome to Vebo ::</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-slider.css" />
+  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+<body>
+  <header>
+    <nav class="navbar navbar-default bg-blue">
+      <div class="container">
+        <ul class="nav navbar-nav top-menu">
+          <li><a href="#"><i class="fa fa-envelope fa-1" aria-hidden="true"></i> hello@vebo.com</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right top-menu">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#"><i class="fa fa-history fa-1" aria-hidden="true"></i> 91- 8123911063</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-default bg-white">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-lg-2 col-sm-6">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo-pad" href="#"><img src="images/logo.jpg"></a>
+          </div>
+
+        </div>
+        <div class="col-lg-10">
+          <!-- Collect the nav links, and other content for toggling -->
+          <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+            <div class="row  ve-search-box">
+
+              <!-- search bar start here-->
+
+              <div class="col-lg-5 col-sm-6 pad-right">
+                <div class="form-group">
+                  <div class="icon-addon addon-lg">
+                    <input type="text" placeholder="Search" class="form-control ve-frm-ctrl" id="search">
+                    <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
+                  </div>
+                </div>
+              </div>
+              <!-- search bar end here-->
+
+              <!-- date picker start here-->
+              <div class="col-lg-4 col-sm-6">
+                <div class="col-md-6 col-sm-6 pad-left pad-right">
+                  <div class="form-group">
+                    <div id="datepicker" class="input-group date " data-date-format="mm-dd-yyyy">
+                      <span class="input-group-addon ve-group-addon "><i
+                          class="glyphicon glyphicon-calendar"></i></span>
+                      <input class="form-control ve-frm-ctrl ve-datepik-bord " type="text" readonly />
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- second date picker-->
+
+                <div class="col-md-6 col-sm-6 pad-right pad-left">
+                  <div class="form-group">
+                    <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
+                      <span class="input-group-addon ve-group-addon ve-datepik-se-bord"><i
+                          class="glyphicon glyphicon-calendar"></i></span>
+                      <input class="form-control ve-frm-ctrl" type="text" readonly />
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- date picker end here-->
+              <!-- event section -->
+
+              <div class="col-lg-3 col-sm-6 pad-left">
+                <div class="col-md-8 col-sm-6 pad-left">
+                  <div class=" form-group ">
+                    <div class="btn-group">
+                      <button class="btn btn-default  dropdown-toggle event-btn" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Event Room <i class="fa fa-calendar fa-1" aria-hidden="true"></i>
+                      </button>
+                      <ul class="dropdown-menu ve-evt-drop">
+                        <li><a href="#"> <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                            Conferences</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Seminars</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Meetings</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Business
+                            Dinners</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Networking
+                            Events </a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Opening
+                            Ceremonies</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Product
+                            Launches</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Weddings</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i> Birthdays </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- button search-->
+                <div class="col-md-4 col-sm-6 pad-left"> <button type="button" class="btn ve-evt-search">Search</button>
+                </div>
+              </div>
+              <!-- event section end -->
+
+            </div>
+
+          </div><!-- /.navbar-collapse -->
+        </div>
+
+
+      </div><!-- /.container-fluid -->
+
+    </nav>
+  </header>
+  <!-- sub banner section-->
+  <section id="sub-banner">
+
+  </section>
+
+  <!-- sub banner section end -->
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <nav class="navbar navbar-default ve-sorted">
+          <div class="col-md-6 col-sm-6 ">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Near Club/Pubs <i class="fa fa-glass fa-1" aria-hidden="true"></i></a></li>
+              <li><a href="#">Near restaurants <i class="fa fa-cutlery fa-1" aria-hidden="true"></i></a></li>
+              <li><a href="#">Near travel <i class="fa fa-car fa-1" aria-hidden="true"></i></a></li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Vebo Events
+                  <i class="fa fa-calendar fa-1" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Corporate Events</a></li>
+                  <li><a href="#">Local Events</a></li>
+                  <li><a href="#">List of Vebo Event</a></li>
+
+                </ul>
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6">
+
+            <div class="btn-group ve-populity">
+              <span class="sorted pull-left">Sorted By</span>
+              <button type="button" class="btn btn-default sorted-btn">Popularity <i class="fa fa-thumbs-up fa-1"
+                  aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-default sorted-btn">Guest <span><img src="images/svg/guest.svg"
+                    class="ve-panel-img" /></span></button>
+              <button type="button" class="btn btn-default sorted-btn">Rating <i class="fa fa-star fa-1"
+                  aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-default sorted-btn">Price <i class="fa fa-long-arrow-down fa-1"
+                  aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-default sorted-btn">Event Manager <i class="fa fa-user fa-1"
+                  aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </section>
+  <div class="clearfix">
+    <div class="line-gap"></div>
+  </div>
+
+  <!-- middle body part section-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <!-- left section start here-->
+        <div class="col-lg-4 col-sm-6">
+          <div class="panel-group" id="accordion">
+
+            <!-- first Popular Locations start-->
+            <div class="panel panel-default ve-panel-box">
+              <div class="panel-heading ve-panel">
+                <h4 class="panel-title ve-panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <span><img src="images/svg/popular-hotel.svg" class="ve-panel-img img-responsive" />
+                    </span>Popular Locations in singapore</a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <ul class="list-group ve-panel-list">
+                  <li class="list-group-item "><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">All of Singapore</a>
+                  </li>
+
+                  <li class="list-group-item"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Outram</a></li>
+
+                  <li class="list-group-item"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Queenstown</a></li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">River Valley</a></li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Rochor</a></li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Southern Islands</a></li>
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">More</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- first Popular Locations end-->
+            <!-- price range section start here-->
+            <div class="panel panel-default ve-panel-box">
+              <div class="panel-heading ve-panel">
+                <h4 class="panel-title ve-panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <span><img src="images/svg/label.svg" class="ve-panel-img img-responsive" />
+                    </span>Price</a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="list-group">
+                  <div class="ve-range">
+                    <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
+                      data-slider-step="5" data-slider-value="[250,450]" />
+                    <span class="pull-left">$ 10</span> <span class="pull-right">€ 1000</span>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <!-- price range section end here-->
+
+            <!-- vevo star type  start here-->
+            <div class="panel panel-default ve-panel-box">
+              <div class="panel-heading ve-panel">
+                <h4 class="panel-title ve-panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                    <span><img src="images/svg/pet-hotel-building.svg" class="ve-panel-img img-responsive" />
+                    </span>Accommodation Type</a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse">
+                <ul class="list-group ve-panel-list">
+                  <li class="list-group-item "><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Five Start</a>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                  </li>
+
+                  <li class="list-group-item"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">FourStar</a>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+
+                  </li>
+
+                  <li class="list-group-item"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Three Star</a>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Two Star</a>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">One Star</a>
+                    <i class="fa fa-star fa-1 ve-ac-star" aria-hidden="true"></i>
+
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <!-- vevo star type  end here-->
+
+            <!-- Event Rating Type  start here-->
+            <div class="panel panel-default ve-panel-box">
+              <div class="panel-heading ve-panel">
+                <h4 class="panel-title ve-panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                    <span><img src="images/svg/rating.svg" class="ve-panel-img img-responsive" />
+                    </span>Event Rating Type</a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse">
+                <ul class="list-group ve-panel-list">
+                  <li class="list-group-item "><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Five Start</a>
+                    <span class="badge ve-badge-green">42</span>
+                  </li>
+
+                  <li class="list-group-item"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">FourStar</a>
+                    <span class="badge ve-badge-green-two">42</span>
+                  </li>
+
+                  <li class="list-group-item"><i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Three Star</a>
+                    <span class="badge ve-badge-green-three">42</span>
+
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">Two Star</a>
+                    <span class="badge ve-badge-red">42</span>
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-angle-double-right fa-1" aria-hidden="true"></i>
+                    <a href="#">One Star</a>
+                    <span class="badge ve-badge-red-one">42</span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <!-- Event Rating Type  end here-->
+
+
+            <!-- More Filter   start here-->
+            <div class="panel panel-default ve-panel-box">
+              <div class="panel-heading ve-panel">
+                <h4 class="panel-title ve-panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                    <span><img src="images/svg/filter-results-button.svg" class="ve-panel-img img-responsive" />
+                    </span>More Filter</a>
+                </h4>
+              </div>
+              <div id="collapseSeven" class="panel-collapse collapse">
+                <div class="list-group">
+                  <div class="ve-range">
+                    <button id="button1id" name="button1id" class="btn btn-default ve-filter-btn">Air Condition</button>
+                    <button id="button1id" name="button1id" class="btn btn-default ve-filter-btn">Pool </button>
+                    <button id="button1id" name="button1id" class="btn btn-default ve-filter-btn">Luxury Hotel</button>
+                    <button id="button1id" name="button1id" class="btn btn-default ve-filter-btn">resturant </button>
+                    <button id="button1id" name="button1id" class="btn btn-default ve-filter-btn">Car Park</button>
+                    <button id="button1id" name="button1id" class="btn btn-default ve-filter-btn">Free Wifi</button>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <!-- More Filter  end here-->
+
+
+          </div>
+        </div>
+        <!-- left section end here-->
+
+
+
+        <!-- right section start here-->
+
+
+        <div class="col-lg-8 col-sm-6 pad-right">
+          <div class="row pad-right">
+            <!-- number1-->
+            <a href="details.html">
+              <div class="col-lg-6">
+                <div class="card ve-prd-bg">
+                  <img src="images/ho1.jpg" alt="Avatar" class="img-responsive ve-prd">
+                  <div class="container prd-cont">
+                    <h4><b>Hotel Panchvati Comforts, Kanakapura road</b> <span><i class="fa fa-heart fa-1"
+                          aria-hidden="true"></i></span></h4>
+                    <p class="col-md-4 ve-cont-box">
+                      <span>
+                        <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                        <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      </span>
+                      <span class="rating-txt">(178)</span>
+                      <span class="rating-txt pull-right">$ 500</span>
+                    </p>
+                    <div class="clearfix"></div>
+                    <p class="col-md-4 ve-cont-box">
+                      <span><i class="fa fa-map-marker fa-1" aria-hidden="true"></i></span>
+                      <span class="prd-loc-txt">
+                        253/6&7, Vasanthapura Main Road, Bangalore
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- number 2-->
+            <div class="col-lg-6">
+              <div class="card ve-prd-bg">
+                <img src="images/ho2.jpg" alt="Avatar" class="img-responsive ve-prd">
+                <div class="container prd-cont">
+                  <h4><b>Hotel Panchvati Comforts, Kanakapura road</b> <span><i class="fa fa-heart fa-1"
+                        aria-hidden="true"></i></span></h4>
+                  <p class="col-md-4 ve-cont-box">
+                    <span>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                    </span>
+                    <span class="rating-txt">(178)</span>
+                    <span class="rating-txt pull-right">$ 500</span>
+                  </p>
+                  <div class="clearfix"></div>
+                  <p class="col-md-4 ve-cont-box">
+                    <span><i class="fa fa-map-marker fa-1" aria-hidden="true"></i></span>
+                    <span class="prd-loc-txt">
+                      253/6&7, Vasanthapura Main Road, Bangalore
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- number 3-->
+            <div class="col-lg-6">
+              <div class="card ve-prd-bg">
+                <img src="images/ho3.jpg" alt="Avatar" class="img-responsive ve-prd">
+                <div class="container prd-cont">
+                  <h4><b>Hotel Panchvati Comforts, Kanakapura road</b> <span><i class="fa fa-heart fa-1"
+                        aria-hidden="true"></i></span></h4>
+                  <p class="col-md-4 ve-cont-box">
+                    <span>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                    </span>
+                    <span class="rating-txt">(178)</span>
+                    <span class="rating-txt pull-right">$ 500</span>
+                  </p>
+                  <div class="clearfix"></div>
+                  <p class="col-md-4 ve-cont-box">
+                    <span><i class="fa fa-map-marker fa-1" aria-hidden="true"></i></span>
+                    <span class="prd-loc-txt">
+                      253/6&7, Vasanthapura Main Road, Bangalore
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- number4-->
+            <div class="col-lg-6">
+              <div class="card ve-prd-bg">
+                <img src="images/ho4.jpg" alt="Avatar" class="img-responsive ve-prd">
+                <div class="container prd-cont">
+                  <h4><b>Hotel Panchvati Comforts, Kanakapura road</b> <span><i class="fa fa-heart fa-1"
+                        aria-hidden="true"></i></span></h4>
+                  <p class="col-md-4 ve-cont-box">
+                    <span>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-1" aria-hidden="true"></i>
+                    </span>
+                    <span class="rating-txt">(178)</span>
+                    <span class="rating-txt pull-right">$ 500</span>
+                  </p>
+                  <div class="clearfix"></div>
+                  <p class="col-md-4 ve-cont-box">
+                    <span><i class="fa fa-map-marker fa-1" aria-hidden="true"></i></span>
+                    <span class="prd-loc-txt">
+                      253/6&7, Vasanthapura Main Road, Bangalore
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+          <div class="line-gap"></div>
+
+          <div class="row">
+            <div class="col-lg-11">
+              <div class="page-nation pull-right">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#">«</a></li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">»</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right section end here-->
+      </div>
+
+    </div>
+
+  </section>
+  <!-- middle body part section end-->
+
+
+
+
+  <!--channel partner menu body-->
+  <section>
+    <div class="container">
+      <div class="row ">
+        <nav class="navbar navbar-default ve-channel ">
+          <ul class="nav navbar-nav v-chmenu">
+            <li class='active'><a href='#'>Home</a></li>
+            <li><a href='#'>Event Management</a></li>
+            <li><a href='#'>Our Travels Agents</a></li>
+            <li><a href='#'>Corporates </a></li>
+            <li><a href='#'>Holiday Packages </a></li>
+            <li><a href='#'>Channel Partner </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!--channel partner body end-->
+
+  <footer class="fot-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          Want to receive exclusive hotel offers? Subscribe to our newsletter!
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="input-group">
+            <input type="text" class="form-control subscrib-box" placeholder="Email Address"
+              aria-describedby="basic-addon2">
+            <span class="input-group-addon subscribe-btn" id="basic-addon2">Subscribe Now</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- social section and menu section-->
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 ve-fot-menu">
+          <ul>
+            <li><a href="#">Company </a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ve-fot-menu">
+          <ul>
+            <li><a href="#">FAQ </a> </li>
+            <li> <a href="#">Terms And Conditions</a></li>
+            <li><a href="#">Legal Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <p>
+            <div class="social">
+              <ul>
+                <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-youtube-play"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-skype"></i></a></li>
+              </ul>
+            </div>
+          </p>
+          <p>
+            <button class="btn app-btn">
+              <span>
+                <i class="fa fa-mobile fa-3 app-icon" aria-hidden="true"></i>
+              </span>
+              <span> Download On the App Store</span>
+            </button>
+          </p>
+          <p>
+            <button class="btn app-btn">
+              <span>
+                <i class="fa fa-play fa-3 app-icon" aria-hidden="true"></i>
+              </span>
+              <span> Get In on Google Play</span>
+            </button>
+          </p>
+
+
+        </div>
+      </div>
+      <!-- social section and menu section end-->
+    </div>
+    <footer class="sub-fot">
+      <div class="container">
+        <div class="row copyright">
+          Copyright @2019 Vebo. All right reserved
+        </div>
+      </div>
+    </footer>
+
+  </footer>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/bootstrap-slider.js"></script>
+
+
+
+  <script src="js/search.js"></script>
+  <script>
+    $(function () {
+
+      $(".input-group-btn .dropdown-menu li a").click(function () {
+
+        var selText = $(this).html();
+
+        //working version - for single button //
+        //$('.btn:first-child').html(selText+'<span class="caret"></span>');  
+
+        //working version - for multiple buttons //
+        $(this).parents('.input-group-btn').find('.btn-search').html(selText);
+
+      });
+
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker({
+        autoclose: true,
+        todayHighlight: true
+      }).datepicker('update', new Date());
+    });
+    $(function () {
+      $("#datepicker2").datepicker({
+        autoclose: true,
+        todayHighlight: true
+      }).datepicker('update', new Date());
+    });
+
+  </script>
+  <script>
+
+    // With JQuery
+    $("#ex2").slider({});
+  </script>
+</body>
+
+</html>

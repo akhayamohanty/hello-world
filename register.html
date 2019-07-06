@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <!-- <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5"> -->
+  <title>:: Welcome to Vebo ::</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body class="booking-bg">
+ 
+        <div class="signup-form">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <h2>Register</h2>
+                    <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-6"><input type="text" class="form-control sign-fro-ctrl" name="first_name" placeholder="First Name" required="required"></div>
+                            <div class="col-xs-6"><input type="text" class="form-control sign-fro-ctrl" name="last_name" placeholder="Last Name" required="required"></div>
+                        </div>        	
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control sign-fro-ctrl" name="email" placeholder="Email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control sign-fro-ctrl" name="password" placeholder="Password" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control sign-fro-ctrl" name="confirm_password" placeholder="Confirm Password" required="required">
+                    </div>        
+                    <div class="form-group">
+                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                    </div>
+                </form>
+                <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+            </div>
+               
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    $(function () {
+
+      $(".input-group-btn .dropdown-menu li a").click(function () {
+
+        var selText = $(this).html();
+
+        //working version - for single button //
+        //$('.btn:first-child').html(selText+'<span class="caret"></span>');  
+
+        //working version - for multiple buttons //
+        $(this).parents('.input-group-btn').find('.btn-search').html(selText);
+
+      });
+
+    });
+
+
+
+  </script>
+
+</body>
+
+</html>
